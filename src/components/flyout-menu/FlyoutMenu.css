@@ -1,0 +1,25 @@
+@media screen and (min-width: 768px) {
+  .flyout-menu-wrapper {
+    position: absolute;
+    top: calc(128px + 0.1rem + 0.5rem + 0.2rem);
+    z-index: 3;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid var(--gray, #d3d3d3);
+  }
+
+  .flyout-menu-wrapper .items-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .flyout-menu-wrapper {
+    top: calc(160px + 0.1rem + 0.5rem + 0.2rem);
+  }
+
+  .flyout-menu-wrapper .items-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

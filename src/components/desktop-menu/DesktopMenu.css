@@ -1,0 +1,75 @@
+.desktop-menu {
+  display: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-menu {
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+  }
+
+  .desktop-menu img {
+    width: 6rem;
+    height: 6rem;
+    aspect-ratio: 1 / 1;
+  }
+
+  .desktop-menu #button-ordernow {
+    background-color: var(--primary, #ffbc0d);
+    color: var(--secondary, #292929);
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+  }
+
+  .desktop-menu .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .desktop-menu .secondary-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .desktop-menu ul {
+    display: flex;
+    align-items: baseline;
+    column-gap: 1rem;
+  }
+
+  .desktop-menu ul li {
+    font-size: small;
+    cursor: pointer;
+    min-width: 5rem;
+  }
+
+  .desktop-menu .dropdown {
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .desktop-menu img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .desktop-menu #button-ordernow {
+    padding: 0.75rem 1.25rem;
+    font-size: large;
+  }
+
+  .desktop-menu ul li {
+    font-size: medium;
+    min-width: 6rem;
+  }
+}

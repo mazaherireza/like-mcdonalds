@@ -1,0 +1,68 @@
+:root {
+  --primary: #ffbc0d;
+  --secondary: #292929;
+  --gray: #d3d3de;
+  --red: #d90007;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.container {
+  padding: 0.5rem;
+}
+
+i.fa {
+  color: var(--secondary, #292929);
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+li {
+  list-style-type: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--primary);
+  border-radius: 0.25rem;
+}
+
+@media screen and (min-width: 425px) {
+  .container {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 1rem 2.5rem;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 1rem 4rem;
+  }
+}

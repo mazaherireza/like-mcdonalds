@@ -1,0 +1,10 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+}
+
+header > .container {
+  box-shadow: 0.1rem 0.1rem 0.5rem 0.2rem var(--gray, #d3d3d3);
+}
