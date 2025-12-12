@@ -17,10 +17,6 @@ export default function DesktopMenu({ dropdownClicked }) {
       <div className="links">
         <div className="secondary-links">
           <ul>
-            <li className="dropdown">
-              <Link to="#">Language</Link>
-              <i className="fa fa-chevron-down"></i>
-            </li>
             <li>
               <Link to="#">Sign Up For Email</Link>
             </li>
