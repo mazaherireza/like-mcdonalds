@@ -42,10 +42,6 @@ export default function MobileMenu() {
         <div className="links">
           <div className="secondary-links">
             <ul>
-              <li className="dropdown">
-                <Link to="#">Language</Link>
-                <i className="fa fa-plus"></i>
-              </li>
               <li>
                 <Link to="#">Sign Up For Email</Link>
               </li>
