@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useDropdownContext } from "@/contexts/dropdown";
 
 import { Link } from "react-router";
 
@@ -6,8 +6,15 @@ import logo from "@/components/imgs/Logo_108x108.png";
 
 import "./DesktopMenu.css";
 
-export default function DesktopMenu({ dropdownClicked }) {
-  const [visibility, setVisibility] = useState(false);
+export default function DesktopMenu() {
+  const { shouldChange, setShouldChange } = useDropdownContext();
+
+  const clickHandler = (e) => {
+    e.preventDefault();
+
+    setShouldChange((prev) => !prev);
+    const flag = !shouldChange;
+  };
 
   return (
     <div className="desktop-menu">
@@ -30,21 +37,18 @@ export default function DesktopMenu({ dropdownClicked }) {
         <div className="primary-links">
           <nav>
             <ul>
-              <li
-                className="dropdown"
-                onClick={() => {
-                  setVisibility((prev) => (prev = !prev));
-                  dropdownClicked(!visibility);
-                }}
-              >
-                <Link to="#" className={visibility ? "bold" : ""}>
+              <li className="dropdown">
+                <button
+                  onClick={clickHandler}
+                  className={shouldChange ? "bold" : ""}
+                >
                   Our Menu
-                </Link>
-                {visibility ? (
-                  <i className="fa fa-chevron-up"></i>
-                ) : (
-                  <i className="fa fa-chevron-down"></i>
-                )}
+                  {shouldChange ? (
+                    <i className="fa fa-chevron-up"></i>
+                  ) : (
+                    <i className="fa fa-chevron-down"></i>
+                  )}
+                </button>
               </li>
               <li>
                 <Link to="#">Download App</Link>
