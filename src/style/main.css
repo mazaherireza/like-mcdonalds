@@ -25,6 +25,7 @@ button {
 
 i.fa {
   color: var(--secondary, #292929);
+  cursor: pointer;
 }
 
 a {
