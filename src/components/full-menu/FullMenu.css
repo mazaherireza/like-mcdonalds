@@ -1,10 +1,11 @@
 .full-menu-wrapper {
-  margin-top: 1rem;
+  margin-block-start: 1rem;
 }
 
 .full-menu-wrapper h4 {
   text-align: center;
-  margin-bottom: 1rem;
+
+  margin-block-end: 1rem;
 }
 
 .full-menu-wrapper .content {
@@ -14,13 +15,14 @@
 }
 
 .full-menu-wrapper .food-wrapper .img-wrapper {
-  width: 12rem;
-  height: 12rem;
+  inline-size: 12rem;
+  block-size: 12rem;
+
   aspect-ratio: 1 / 1;
 }
 
 .full-menu-wrapper .food-wrapper img {
-  width: 100%;
+  inline-size: 100%;
 }
 
 .full-menu-wrapper .food-wrapper p {

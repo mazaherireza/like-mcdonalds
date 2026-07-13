@@ -1,11 +1,14 @@
 @media screen and (min-width: 768px) {
   .flyout-menu-wrapper {
-    position: absolute;
-    top: calc(128px + 0.1rem + 0.5rem + 0.2rem);
-    z-index: 3;
-    width: 100%;
     background-color: white;
-    border-bottom: 1px solid var(--gray, #d3d3d3);
+
+    position: absolute;
+    inset-block-start: calc(128px + 0.1rem + 0.5rem + 0.2rem);
+    z-index: 3;
+
+    inline-size: 100%;
+
+    border-block-end: 1px solid var(--gray, #d3d3d3);
   }
 
   .flyout-menu-wrapper .items-wrapper {

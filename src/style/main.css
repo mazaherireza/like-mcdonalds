@@ -9,12 +9,14 @@
 *::before,
 *::after {
   box-sizing: border-box;
+
   padding: 0;
   margin: 0;
 }
 
 button {
   cursor: pointer;
+
   border: none;
   outline: none;
 }
@@ -37,11 +39,12 @@ li {
 }
 
 ::-webkit-scrollbar {
-  width: 0.25rem;
+  inline-size: 0.25rem;
 }
 
 ::-webkit-scrollbar-track {
   background-color: var(--primary);
+
   border-radius: 0.25rem;
 }
 
@@ -57,7 +60,7 @@ li {
   }
 
   ::-webkit-scrollbar {
-    width: 0.5rem;
+    inline-size: 0.5rem;
   }
 }
 
